@@ -12,10 +12,6 @@ const GridContainer = Styled.section`
 `;
 
 class AnimeGridList extends React.PureComponent {
-  static propTypes = {
-    animes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  };
-
   renderAnimeBoxLink = animes => animes.map(anime => <AnimeBoxLink key={anime.id} anime={anime} />)
 
   render = () => (
